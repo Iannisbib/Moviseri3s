@@ -1,11 +1,54 @@
-<ion-content>
-  <h1 class="titulo"> Moviseri3s</h1>
-  <ion-card>
-    <ion-card-content>
-      <img src="img1.png" alt="">
-      <img src="img/img1.png" alt="">
-      <img src="../img/img1.png" alt="">
-    </ion-card-content>
-  </ion-card>
- </ion-content>
+<ion-app>
+    <ion-menu content-id="main-content">
+        <ion-toolbar color="primary">
+          <ion-title>Menu</ion-title>
+        </ion-toolbar>
   
+      <ion-content>
+        <ion-list>
+          <ion-list-header>
+            Navigate
+          </ion-list-header>
+          <ion-menu-toggle auto-hide="false">
+            <ion-item button>
+              <ion-icon slot="start" name='home'></ion-icon>
+              <ion-label>
+                Home
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+  
+    <ion-page class="ion-page" id="main-content">
+      <ion-header>
+        <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-menu-toggle>
+              <ion-button>
+                <ion-icon slot="icon-only" name="menu"></ion-icon>
+              </ion-button>
+            </ion-menu-toggle>
+          </ion-buttons>
+          <ion-title id="titulo"> Moviseri3s</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">
+        <h1>Main Content</h1>
+        <p>Click the icon in the top left to toggle the menu.</p>
+      </ion-content>
+    </ion-page>
+  </ion-app>
+  
+  <ion-menu-controller></ion-menu-controller>
+  <ion-content> 
+    <ion-img id="batman" src="assets/img/batman.jpg">
+    </ion-img>
+  </ion-content>
+
+
+
+
+
+
