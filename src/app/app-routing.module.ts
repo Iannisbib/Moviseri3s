@@ -14,7 +14,15 @@ const routes: Routes = [
   {
     path: 'principal',
     loadChildren: () => import('./principal/principal.module').then( m => m.PrincipalPageModule)
+  },  {
+    path: 'pelicula',
+    loadChildren: () => import('./pelicula/pelicula.module').then( m => m.PeliculaPageModule)
   },
+  {
+    path: 'serie',
+    loadChildren: () => import('./serie/serie.module').then( m => m.SeriePageModule)
+  },
+
 
 ];
 
