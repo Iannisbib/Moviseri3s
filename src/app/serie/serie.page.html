@@ -1,0 +1,53 @@
+<ion-app>
+  <ion-menu content-id="main-content">
+      <ion-toolbar color="primary">
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    <ion-content>
+      <ion-list routerLink="/principal">
+        <ion-menu-toggle auto-hide="false">
+          <ion-item button>
+            <ion-icon slot="start" name='home'color="secondary"></ion-icon>
+            <ion-label>
+              Menu
+            </ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+      <ion-list routerLink="/pelicula">
+        <ion-menu-toggle auto-hide="false">
+          <ion-item button>
+            <ion-icon slot="start" name='film'color="secondary"></ion-icon>
+            <ion-label>
+              Pelicula
+            </ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+      <ion-list routerLink="/serie">
+        <ion-menu-toggle auto-hide="false">
+          <ion-item button>
+            <ion-icon slot="start" name='videocam'color="secondary"></ion-icon>
+            <ion-label>
+              Serie
+            </ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-page class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar color="secondary">
+        <ion-buttons slot="start">
+          <ion-menu-toggle>
+            <ion-button>
+              <ion-icon slot="icon-only" name="menu" color="primary"></ion-icon>
+            </ion-button>
+          </ion-menu-toggle>
+        </ion-buttons>
+        <ion-title id="titulo"> Series</ion-title>
+      </ion-toolbar>
+    </ion-header>
+  </ion-page>
+</ion-app>
