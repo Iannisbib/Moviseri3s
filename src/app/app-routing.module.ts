@@ -23,7 +23,10 @@ const routes: Routes = [
     path: 'serie',
     loadChildren: () => import('./serie/serie.module').then( m => m.SeriePageModule)
   },
-
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
 
 ];
 

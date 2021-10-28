@@ -1,4 +1,32 @@
-
 <ion-content>
-
-</ion-content>
+    <div class="login-section ion-padding">
+        <div class="heading ion-padding">
+           <h1>Bienvenidos</h1>
+           <p>Iniciar sesion</p> 
+        </div>
+        <div class="login-form ion-padding">
+           <div class="form-input">
+               <ion-icon name="mail-outline"></ion-icon>
+              <ion-item>
+                  <ion-label position="floating">EMAIL</ion-label>
+                <ion-input type="email"></ion-input>
+                </ion-item>
+    
+            </div> 
+            <div class="form-input">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+               <ion-item>
+                   <ion-label position="floating">PASSWORD</ion-label>
+                 <ion-input type="password"></ion-input>
+                 </ion-item>
+    
+             </div> 
+        </div>
+        <div class="action-button ion-padding">
+            <ion-button routerLink="/principal" size="large" class="login-button">Log in</ion-button>
+            <p>Forgot password?</p>
+            <ion-button class="signup-botton" size="large" fill="outline" routerlink="/signup">Sign up</ion-button>
+        </div>
+    
+    </div>
+    </ion-content>
