@@ -34,7 +34,7 @@
           </ion-item>
         </ion-menu-toggle>
       </ion-list>
-      <ion-list routerLink="/search">
+      <ion-list routerLink="/buscar">
         <ion-menu-toggle auto-hide="false">
           <ion-item button>
             <ion-icon slot="start" name='search-outline'color="secondary"></ion-icon>
@@ -56,20 +56,19 @@
             </ion-button>
           </ion-menu-toggle>
         </ion-buttons>
-        <ion-title id="titulo">Serie</ion-title>
+        <ion-title id="titulo"> Buscar </ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content class="ion-padding">
-      <ion-card>
-        <img src="./assets/img/batman.jpg" />
-        <ion-card-header>
-          <ion-card-subtitle>Destination</ion-card-subtitle>
-          <ion-card-title>Madison, WI</ion-card-title>
-        </ion-card-header>
-        <ion-card-content>
-          Founded in 1829 on an isthmus between Lake Monona and Lake Mendota, Madison was named the capital of the Wisconsin Territory in 1836.
-        </ion-card-content>
-      </ion-card>
+      <ion-toolbar>
+        <ion-searchbar cancelButtonText="Custom Cancel"></ion-searchbar>
+      </ion-toolbar>
+      <ion-list>
+        <ion-item>Amsterdam</ion-item>
+        <ion-item>Bogota</ion-item>
+        <ion-item>Buenos Aires</ion-item>
+        <ion-item>Cairo</ion-item>
+      </ion-list>
     </ion-content>
   </ion-page>
 </ion-app>

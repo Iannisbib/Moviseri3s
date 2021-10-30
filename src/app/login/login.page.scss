@@ -1,17 +1,17 @@
 ion-content {
-    background: linear-gradient(0deg,rgba,(0,0,0,0.7), rgba(0,0,0,0.1)),
+    --background:
     url("/assets/fotos/breaking.jpg") no-repeat center center / cover;
 }
 
 .login-section{
-    height: 74vh;
+    height: 84vh;
     width: 100%;
     max-width: 500px;
-    background: #fff;
+    background: #ffffff00;
     right: 0;
     left: 0;
     bottom: 0;
-    position: fixed;
+    position:absolute;
     margin: auto;
     border-top-left-radius: 46px;
     border-top-right-radius: 46px;
@@ -19,13 +19,13 @@ ion-content {
     .heading{
         margin-top: 20px;
         h1{
-            font-size: 1.6rem;
+            font-size: 2rem;
             font-weight: bolder;
         }
         p{
            margin-top: 20px;
-           font-size: 1rem;
-           color: #7b7b7b; 
+           font-size: 1.5rem;
+           color: #f59212; 
         }
     }
     .login-form{
@@ -57,7 +57,7 @@ ion-content {
                 font-size: 0.9rem;
                 --padding-start: 36px;
                 --padding-top: 36px;
-                color: #7b7b7b;
+                color: #f59212;
             }
 
         }
@@ -75,11 +75,12 @@ ion-content {
             color: #7b7b7b;
         }
         .signup-button{
-            --border-color: #b4b4b4;
-            -color: #000000;
-            font-weight: bold;
+        --background: #f9b801;
+        width: 100%;
+        font-weight: bold;
             margin-top: 30px;
-            width: 100%;
+
+     
 
 
         }
