@@ -61,13 +61,12 @@
     </ion-header>
     <ion-content class="ion-padding">
       <ion-toolbar>
-        <ion-searchbar cancelButtonText="Custom Cancel"></ion-searchbar>
+        <ion-searchbar cancelButtonText="Custom Cancel" placeholder="Buscar" (ionChange)="buscar($event)"></ion-searchbar>
       </ion-toolbar>
       <ion-list>
-        <ion-item>Amsterdam</ion-item>
-        <ion-item>Bogota</ion-item>
-        <ion-item>Buenos Aires</ion-item>
-        <ion-item>Cairo</ion-item>
+        <ion-item *ngFor="let item of lista" routerLink="/pelicula">
+          {{item}}
+        </ion-item>
       </ion-list>
     </ion-content>
   </ion-page>

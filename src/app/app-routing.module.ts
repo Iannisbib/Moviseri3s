@@ -3,12 +3,16 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
     path: 'home',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
   {
     path: '',
-    redirectTo: 'principal',
+    redirectTo: 'login',
     pathMatch: 'full'
   },
   {
@@ -23,15 +27,16 @@ const routes: Routes = [
     path: 'serie',
     loadChildren: () => import('./serie/serie.module').then( m => m.SeriePageModule)
   },
-  {
-    path: 'login',
-    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
-  },
+  
   
   {
     path: 'search',
     loadChildren: () => import('./search/search.module').then( m => m.SearchPageModule)
+  },  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
+
 
 
 ];
